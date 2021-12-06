@@ -11,21 +11,22 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="660dp"
+        android:layout_marginEnd="50dp"
         android:gravity="center"
         android:text="Order Details"
         android:textSize="24sp"
         android:textStyle="normal|bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.008" />
 
     <EditText
         android:id="@+id/inputNama"
-        android:layout_width="0dp"
-        android:layout_height="48dp"
+        android:layout_width="313dp"
+        android:layout_height="32dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="32dp"
         android:ems="10"
@@ -43,8 +44,8 @@
         android:id="@+id/nama"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="84dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
         android:text="Nama Pemesan"
         android:textSize="16sp"
         android:textStyle="bold"
@@ -74,8 +75,8 @@
 
     <EditText
         android:id="@+id/InputAlamat"
-        android:layout_width="0dp"
-        android:layout_height="48dp"
+        android:layout_width="310dp"
+        android:layout_height="36dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="32dp"
         android:ems="10"
@@ -101,24 +102,21 @@
 
     <EditText
         android:id="@+id/inputHP"
-        android:layout_width="0dp"
-        android:layout_height="48dp"
+        android:layout_width="311dp"
+        android:layout_height="31dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="32dp"
         android:ems="10"
         android:hint="[Nomor Telepon User]"
         android:inputType="text"
         android:textSize="12sp"
         android:textStyle="italic"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/handphone"
         app:layout_constraintTop_toBottomOf="@+id/handphone" />
 
     <EditText
         android:id="@+id/InputSize"
-        android:layout_width="0dp"
-        android:layout_height="48dp"
+        android:layout_width="311dp"
+        android:layout_height="34dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="32dp"
         android:ems="10"
@@ -133,8 +131,8 @@
 
     <EditText
         android:id="@+id/InputMeminjam"
-        android:layout_width="110dp"
-        android:layout_height="39dp"
+        android:layout_width="127dp"
+        android:layout_height="36dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="32dp"
         android:ems="10"
@@ -149,9 +147,9 @@
 
     <EditText
         android:id="@+id/InputPengembalian"
-        android:layout_width="118dp"
-        android:layout_height="33dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="164dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="4dp"
         android:layout_marginEnd="32dp"
         android:ems="10"
         android:hint=""
@@ -198,39 +196,36 @@
         app:layout_constraintStart_toStartOf="@+id/InputSize"
         app:layout_constraintTop_toBottomOf="@+id/InputSize" />
 
-    <EditText
+
+    <Spinner
         android:id="@+id/InputJas"
-        android:layout_width="0dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="32dp"
-        android:ems="10"
-        android:fontFamily="sans-serif-medium"
-        android:hint="[Nama User]"
-        android:inputType="textPersonName|text"
-        android:textSize="12sp"
-        android:textStyle="italic"
+        android:layout_width="313dp"
+        android:layout_height="45dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:entries="@array/suit_array"
+        android:prompt="@string/choose_suit"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/nama"
+        app:layout_constraintStart_toStartOf="@+id/NamaJas"
         app:layout_constraintTop_toBottomOf="@+id/NamaJas" />
-
 
     <Button
         android:id="@+id/btnOrder"
-        android:layout_width="304dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="32dp"
+        android:layout_width="294dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="16dp"
-        android:background="#51CA25"
-        android:backgroundTint="#1FDD22"
+        android:backgroundTint="#587289"
         android:text="Order Sekarang"
         android:textSize="14sp"
         android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.32"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/InputMeminjam"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

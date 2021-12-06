@@ -3,28 +3,45 @@ package umn.ac.id.uas_suits;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
 public class Order extends AppCompatActivity {
 
-    EditText fName,jName,address,phoneN,size,dateO,dateR;
+    EditText fName,address,phoneN,size,dateO,dateR;
     Button orderBtn;
     FirebaseFirestore fStore;
+    Spinner spinner;
 
+
+    Order order;
+    String item;
+
+    String [] SuitName = {"Choose Suit", "Black", " Blue", "Brown"};
+
+
+
+    @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,7 +49,9 @@ public class Order extends AppCompatActivity {
         fStore = FirebaseFirestore.getInstance();
         orderBtn = findViewById(R.id.btnOrder);
         fName = findViewById(R.id.inputNama);
-        jName = findViewById(R.id.InputJas);
+        spinner = findViewById(R.id.InputJas);
+        //jName.setOnItemSelectedListener((AdapterView.OnItemSelectedListener) this);
+        //jName = findViewById(R.id.InputJas);
         address = findViewById(R.id.InputAlamat);
         phoneN = findViewById(R.id.inputHP);
         size = findViewById(R.id.InputSize);
@@ -44,7 +63,7 @@ public class Order extends AppCompatActivity {
             public void onClick(View v) {
 
                 String FullName = fName.getText().toString();
-                String SuitName = jName.getText().toString();
+                String SuitName = spinner.getSelectedItem().toString();
                 String Address = address.getText().toString();
                 String Phone = phoneN.getText().toString();
                 String Size = size.getText().toString();

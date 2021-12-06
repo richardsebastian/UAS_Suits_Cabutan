@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:backgroundTint="#933F3F"
+    android:backgroundTint="#2B2727"
     android:orientation="vertical"
     tools:context=".Register">
 
@@ -41,11 +41,12 @@
 
     <Button
         android:id="@+id/login"
-        android:layout_width="150dp"
-        android:layout_height="48dp"
+        android:layout_width="204dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="30dp"
-        android:background="#4C93D3"
+        android:backgroundTint="@color/teal_200"
+        android:backgroundTintMode="src_in"
         android:text="@string/login" />
 
     <TextView

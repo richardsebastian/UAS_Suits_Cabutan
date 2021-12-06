@@ -53,11 +53,11 @@
 
     <Button
         android:id="@+id/register"
-        android:layout_width="150dp"
-        android:layout_height="48dp"
+        android:layout_width="174dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="30dp"
-        android:background="#587289"
+        android:backgroundTint="#555353"
         android:text="@string/register" />
 
     <TextView
