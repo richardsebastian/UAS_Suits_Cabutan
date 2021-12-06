@@ -1,10 +1,40 @@
 {
   "project_info": {
     "project_number": "143685543557",
+    "firebase_url": "https://uas-suit-s-default-rtdb.asia-southeast1.firebasedatabase.app",
     "project_id": "uas-suit-s",
     "storage_bucket": "uas-suit-s.appspot.com"
   },
   "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:143685543557:android:53b640fe6fe6191b1bebec",
+        "android_client_info": {
+          "package_name": "id.ac.umn.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "143685543557-qhacq2v5qh4rdhjaue4oo9bih9loeb13.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChy1sR_k4pDf6qbaJMp1QxFPBrdbpQ1Yw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "143685543557-qhacq2v5qh4rdhjaue4oo9bih9loeb13.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
     {
       "client_info": {
         "mobilesdk_app_id": "1:143685543557:android:d1c6179cd7c6e5a11bebec",
