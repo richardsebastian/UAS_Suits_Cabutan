@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">UAS_Suit\'s</string>
+    <string name="fname">Full Name</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="register">Register</string>
+    <string name="haveacc">Already Have Account? Login Here</string>
+    <string name="login">Login</string>
+    <string name="noacc">New Here? Creat Account Here</string>
+</resources>
