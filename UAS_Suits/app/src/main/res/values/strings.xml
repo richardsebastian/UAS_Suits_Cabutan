@@ -18,14 +18,14 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="choose_suit">Choose suit</string>
     <string-array name="suit_array">
-        <item>Classic suit four dollars per day</item>
-        <item>Brown suit five dollars per day</item>
-        <item>Blue suit five dollars per day</item>
-        <item>Shelby suit six dollars per day</item>
-        <item>Skinny suit six dollars per day</item>
-        <item>Work suit three dollars per day</item>
-        <item>Tartan suit five dollars per day</item>
-        <item>Batik suit three dollars per day</item>
-        <item>Vintage suit six dollars per day</item>
+        <item>Classic Suit - Rp.75.000 per day</item>
+        <item>Brown Suit - Rp.75.000 per day</item>
+        <item>Blue Suit - Rp.75.000 per day</item>
+        <item>Shelby Suit - Rp.80.000 per day</item>
+        <item>Skinny Suit - Rp.80.000 per day</item>
+        <item>Work Suit - Rp.65.000 per day</item>
+        <item>Tartan Suit - Rp.75.000 per day</item>
+        <item>Batik Suit - Rp.65.000 per day</item>
+        <item>Vintage Suit - Rp.80.000 per day</item>
     </string-array>
 </resources>

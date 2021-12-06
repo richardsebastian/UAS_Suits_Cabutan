@@ -90,7 +90,7 @@ public class Order extends AppCompatActivity {
                     }
                 });
 
-                startActivity(new Intent(Order.this, OrderSuccess.class));
+                startActivity(new Intent(Order.this, Payment.class));
             }
         });
     }

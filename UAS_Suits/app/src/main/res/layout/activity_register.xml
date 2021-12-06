@@ -193,14 +193,15 @@
             android:textSize="16sp" />
 
         <Button
+            android:id="@+id/Register_Button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/Register_Button"
-            android:layout_marginStart="70dp"
-            android:layout_marginEnd="70dp"
             android:layout_below="@+id/Password2"
+            android:backgroundTint="@color/black"
+            android:layout_marginStart="70dp"
             android:layout_marginTop="50dp"
-            android:text="Register"/>
+            android:layout_marginEnd="70dp"
+            android:text="Register" />
 
 
     </RelativeLayout>

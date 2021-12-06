@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.UAS_Suits">
         <activity
+            android:name=".Profile"
+            android:exported="false" />
+        <activity
             android:name=".WellcomePage"
             android:exported="false" />
         <activity
